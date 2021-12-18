@@ -62,15 +62,18 @@
         </div>
 
         <div>
-            <form>
+            <form action="/enviar" method="post">
                     Seu e-mail: <br>
-                 <input type="text" name="e-mail"> <br>
+                 <input type="text" name="email" value = "{{ request.form['email']}}"> <br>
                     Assunto: <br>
-                 <input type="text" name="assunto"> <br>
+                 <input type="text" name="assunto" value = "{{ request.form['assunto']}}"> <br>
                      Descrição: <br>
-                 <input type="text" name="descrição"> <br>
-                 <input type="submit" value="Enviar">
+                 <input type="text" name="descricao" value = "{{ request.form['descricao']}}"> <br>
+                 <input type="submit" value="enviar">
            </form>
+
+           
+           
         </div>
 
         <div>
